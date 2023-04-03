@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.EntryController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="579.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="73.0" layoutY="61.0" prefHeight="108.0" prefWidth="382.0" text="   ESALAF" textFill="#d69ac4">
+         <font>
+            <Font name="Maiandra GD" size="77.0" />
+         </font>
+      </Label>
+      <Button layoutX="172.0" layoutY="231.0" mnemonicParsing="false" onAction="#switchToMenu" onMouseClicked="#switchToMenu" prefHeight="51.0" prefWidth="163.0" text="  COMMENCER" />
+   </children>
+</AnchorPane>

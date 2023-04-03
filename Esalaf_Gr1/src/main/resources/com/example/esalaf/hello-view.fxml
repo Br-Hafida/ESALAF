@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxWidth="600.0" prefHeight="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Interface Client : " textFill="#8765e4">
+      <font>
+         <Font name="Arial Bold" size="27.0" />
+      </font>
+   </Label>
+   <Label prefHeight="17.0" prefWidth="67.0" text="id_client :">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <TextField fx:id="id" />
+   <Label prefHeight="21.0" prefWidth="49.0" text="Nom :">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <TextField fx:id="nom" prefHeight="25.0" prefWidth="548.0" />
+   <Label prefHeight="21.0" prefWidth="87.0" text="Telephone :">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <TextField fx:id="tele" />
+
+
+    <Button fx:id="ok" onAction="#onSaveButtonClick" onMouseClicked="#onSaveButtonClick" prefHeight="25.0" prefWidth="212.0" text="Save" />
+   <Button mnemonicParsing="false" onAction="#onDeleteButtonClick" onMouseClicked="#onDeleteButtonClick" prefHeight="25.0" prefWidth="213.0" text="Delete" />
+   <Button mnemonicParsing="false" onAction="#onUpdateButtonClick" onMouseClicked="#onUpdateButtonClick" prefHeight="25.0" prefWidth="213.0" text="Update" />
+   <TableView fx:id="mytab" prefHeight="200.0" prefWidth="548.0">
+     <columns>
+       <TableColumn fx:id="col_id" prefWidth="158.33333778381348" text="ID" />
+         <TableColumn fx:id="col_nom" prefWidth="183.33334350585938" text="Nom" />
+         <TableColumn fx:id="col_tele" prefWidth="204.66665649414062" text="Tele" />
+     </columns>
+   </TableView>
+   <Button mnemonicParsing="false" onAction="#switchToMenu" onMouseClicked="#switchToMenu" text="Return au Menu" />
+</VBox>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.CommandeController">
+   <children>
+      <Label prefHeight="32.0" prefWidth="300.0" text="Interface Commande :" textFill="#8765e4">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font></Label>
+      <Label focusTraversable="false" text="Id client : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="id_client" prefHeight="25.0" prefWidth="538.0" />
+      <Label accessibleRole="PARENT" focusTraversable="false" text="Produit : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="produit" />
+      <Label text="Quantite : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="quantite" />
+      <Label text="Etat : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="etat" />
+      <Button mnemonicParsing="false" onAction="#onSaveButtonClick" onMouseClicked="#onSaveButtonClick" prefHeight="25.0" prefWidth="213.0" text="Save" />
+      <Button mnemonicParsing="false" onAction="#onUpdateButtonClick" onMouseClicked="#onUpdateButtonClick" prefHeight="25.0" prefWidth="214.0" text="Update" />
+      <Button mnemonicParsing="false" onAction="#onDeleteButtonClick" onMouseClicked="#onDeleteButtonClick" prefHeight="25.0" prefWidth="214.0" text="Delete" />
+      <TableView fx:id="mytabl" prefHeight="65.0" prefWidth="560.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="120.33332252502441" text="Id_client" />
+          <TableColumn fx:id="col_produit" prefWidth="144.33334350585938" text="Produit" />
+            <TableColumn fx:id="col_quantite" prefWidth="140.0" text="Quantite" />
+            <TableColumn fx:id="col_etat" prefWidth="200.6666259765625" text="Etat" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#switchToMenu" onMouseClicked="#switchToMenu" text="Retourne au Menu" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

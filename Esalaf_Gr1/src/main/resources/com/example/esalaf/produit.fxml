@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.ProduitController">
+   <children>
+      <Label text="Interface Produit : " textFill="#6858e0">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font></Label>
+      <Label text="Id_produit : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="id_pro" />
+      <Label text="Categorie : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="cat" />
+      <Label text="Prix : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="pri" />
+      <Button mnemonicParsing="false" onMouseClicked="#onSaveButtonClick" text="Save" />
+      <Button mnemonicParsing="false" onMouseClicked="#onDeleteButtonClick" text="Delete" />
+      <Button mnemonicParsing="false" onMouseClicked="#onUpdateButtonClick" text="Update" />
+      <TableView fx:id="mytab" prefHeight="200.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="colpro" prefWidth="158.33333778381348" text="Id_produit" />
+          <TableColumn fx:id="colcat" prefWidth="158.33333778381348" text="Categorie" />
+            <TableColumn fx:id="colpri" prefWidth="158.33333778381348" text="Prix" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#switchToMenu" onMouseClicked="#switchToMenu" text="Retourne au Menu" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
